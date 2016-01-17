@@ -53,6 +53,9 @@ Click on the help icon on top right corner and follow the tour.
 ![Screenshot](https://github.com/jonasdd/BeardyBeer-MashStepsTracking/blob/master/screenshot.png)
 
 ##Advanced usage
+
+see arduinoSerial Api. Comming soon...
+
 ##API Reference
 
 The project in based on :
