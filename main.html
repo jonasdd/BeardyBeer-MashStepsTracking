@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../source/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../source/css/bootstrap-switch.css">
+  <link rel="stylesheet" href="../source/css/style.css">
+</head>
+<body>
+  <div id="container" class="toWidth">
+    <!-- <label>Port:</label>   -->
+    <div class="row topTable">
+      <button class="glyphicon glyphicon-question-sign btn-lg noBtnStyle"></button>
+      <div class="col-md-12">
+        <div class="col-md-6 topData">
+          <h2>Connect !</h2>
+          <div class="input-group">
+            <select class="form-control" placeholder="Port " id="port-picker"></select>
+            <span class="input-group-btn">
+              <button id="connect-button" class="btn btn-success glyphicon glyphicon-flash" title="Connect"></button>
+            </span>
+          </div>
+          <h2>Live Temp !</h2>
+          <div class="input-group">
+          <span id="liveValue" class="form-control" data-live="">0</span>
+            <div class="input-group-btn">
+              <button class="btn btn-success start startMash">Start</button>
+              <button class="btn btn-success pause pauseMash">Pause</button>
+              <button class="btn btn-success next nextMash">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active" ><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Set !</a></li>
+    <li role="presentation" ><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Track !</a></li>
+    <li role="presentation" ><a href="#console" aria-controls="console" role="tab" data-toggle="tab">Logs !</a></li>
+  </ul>
+  <!-- Tab panes -->
+  <div class="tab-content clearfix">
+    <div role="tabpanel" class="tab-pane active" id="home">
+      <div class="col-md-3">
+        <div class="mashStep mashStep1">
+          <h2 class="col-md-12">MashStep1<span class="pull-right glyphicon"></span></h2>
+          <div class="col-md-12 setSection">
+            <div class="set setTemp col-md-12 temp text-center currentField">
+              <input class="valeur" type="radio" name="group1" id="mashStep1TempSetSelect">
+              <label for="mashStep1TempSetSelect" class="tempSetSelect">
+                <span  class="value mashStepCurrentTemp">25</span>
+              </label>
+              <span class="pull-right valeur">&#176;C</span>
+            </div>
+            <div class="set setTime col-md-12 text-center">
+              <input type="radio" name="group1" id="mashStep1TimeSetSelect">
+              <label for="mashStep1TimeSetSelect" class="timeSetSelect">
+                <span id="" class="clock" data-countdown="10"></span>
+                <button class=" noBtnStyle glyphicon glyphicon-pause pause btn-xs"></button>
+                <button class=" noBtnStyle glyphicon glyphicon-play play btn-xs"></button>
+              </label>
+            </div>
+          </div>
+          <div class="change row inactive">
+            <div class="col-md-12  text-center">
+              <button class="glyphicon glyphicon-chevron-left plus"></button>
+            </div>
+            <div class="col-md-12  text-center">
+              <button class="glyphicon glyphicon-chevron-left moins"></button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <input type="checkbox" class="switch">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="mashStep mashStep2">
+          <h2 class="col-md-12">MashStep2<span class="pull-right glyphicon"></span></h2>
+          <div class="col-md-12 setSection">
+            <div class="set setTemp col-md-12 temp text-center currentField">
+              <input class="valeur" type="radio" name="group1" id="mashStep2TempSetSelect">
+              <label for="mashStep2TempSetSelect" class="tempSetSelect">
+                <span class="value">26</span>
+              </label>
+              <span class="pull-right valeur">&#176;C</span>
+            </div>
+            <div class="set setTime col-md-12 text-center">
+              <input type="radio" name="group1" id="mashStep2TimeSetSelect">
+              <label for="mashStep2TimeSetSelect" class="timeSetSelect">
+                <!-- <span class="value">40</span> -->
+                <span id="timer" class="clock" data-countdown="15"></span>
+                <!-- <span class="min text-right">min</span> -->
+                <button class=" noBtnStyle glyphicon glyphicon-pause pause btn-xs"></button>
+                <button class=" noBtnStyle glyphicon glyphicon-play play btn-xs"></button>
+              </label>
+            </div>
+          </div>
+          <div class="change row inactive">
+            <div class="col-md-12  text-center">
+              <button class="glyphicon glyphicon-chevron-left plus"></button>
+            </div>
+            <div class="col-md-12  text-center">
+              <button class="glyphicon glyphicon-chevron-left moins"></button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <input type="checkbox" class="switch">
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div class="col-md-3">
+        <div class="mashStep mashStep3">
+          <h2 class="col-md-12">MashStep3<span class="pull-right glyphicon"></span></h2>
+          <div class="col-md-12 setSection">
+            <div class="set setTemp col-md-12 temp text-center currentField">
+              <input class="valeur" type="radio" name="group1" id="mashStep3TempSetSelect">
+              <label for="mashStep3TempSetSelect" class="tempSetSelect">
+                <span class="value">26</span>
+              </label>
+              <span class="pull-right valeur">&#176;C</span>
+            </div>
+            <div class="set setTime col-md-12 text-center">
+              <input type="radio" name="group1" id="mashStep3TimeSetSelect">
+              <label for="mashStep3TimeSetSelect" class="timeSetSelect">
+                <span id="" class="clock" data-countdown="12"></span>
+                <button class=" noBtnStyle glyphicon glyphicon-pause pause btn-xs"></button>
+                <button class=" noBtnStyle glyphicon glyphicon-play play btn-xs"></button>
+              </label>
+            </div>
+          </div>
+          <div class="change row inactive">
+            <div class="col-md-12  text-center">
+              <button class="glyphicon glyphicon-chevron-left plus"></button>
+            </div>
+            <div class="col-md-12  text-center">
+              <button class="glyphicon glyphicon-chevron-left moins"></button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <input type="checkbox" class="switch">
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div class="col-md-3">
+        <div class="mashStep mashStep4">
+          <h2 class="col-md-12">MashStep4<span class="pull-right glyphicon"></span></h2>
+          <div class="col-md-12 setSection">
+            <div class="set setTemp col-md-12 temp text-center currentField">
+              <input class="valeur" type="radio" name="group1" id="mashStep4TempSetSelect">
+              <label for="mashStep4TempSetSelect" class="tempSetSelect">
+                <span class="value">27</span>
+              </label>
+              <span class="pull-right valeur">&#176;C</span>
+            </div>
+            <div class="set setTime col-md-12 text-center">
+              <input type="radio" name="group1" id="mashStep4TimeSetSelect">
+              <label for="mashStep4TimeSetSelect" class="timeSetSelect">
+                <span id="" class="clock" data-countdown="6"></span>
+                <button class=" noBtnStyle glyphicon glyphicon-pause pause btn-xs"></button>
+                <button class=" noBtnStyle glyphicon glyphicon-play play btn-xs"></button>
+              </label>
+            </div>
+          </div>
+          <div class="change row inactive">
+            <div class="col-md-12  text-center">
+              <button class="glyphicon glyphicon-chevron-left plus"></button>
+            </div>
+            <div class="col-md-12  text-center">
+              <button class="glyphicon glyphicon-chevron-left moins"></button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <input type="checkbox" class="switch">
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+
+    <div class="row">
+      <div id="containerGraph" class="left col-md-12"></div>
+    </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="console">
+        <div id="log" class="col-md-12"></div>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="modalInfo">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Info</h4>
+      </div>
+      <div class="modal-body">
+        <p class="message"></p>
+        <p>You should save the chart !</p>
+        <div class="chart-export" data-chart-selector="#containerGraph">
+          <button type="button" class="btn btn-default" data-type="image/svg+xml">SVG</button>
+          <button type="button" class="btn btn-default" data-type="text/csv">CSV</button>
+          <button type="button" class="btn btn-default" data-type="application/vnd.ms-excel">XLS</button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  <!-- beep -->
+  <audio id="soundObj" src="source/audio/beep-07.wav" autostart=false loop=false ></audio>
+<script src="source/js/jquery-v2.1.4-min.js"></script>
+<script src="helpers.js"></script>
+<script src="source/js/bootstrap-switch.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="source/js/bootstrap.min.js"></script>
+<script src="source/js/highchart.js"></script>
+<script src="source/js/export-csv.js"></script> 
+<script src="source/js/highcharts-export-clientside.js"></script>
+<script src="source/js/progressBar.js"></script>
+<script src="source/js/jquery.countdown.min.js"></script>
+<script src="source/js/bootstrap-tour.min.js"></script>
+<script src="source/beardyBeerTour.js"></script>
+<script src="chrome2arduino.js"></script>
+<script src="mash.js"></script>
+<script src="front.js"></script>
+   
+</body>
+</html>
