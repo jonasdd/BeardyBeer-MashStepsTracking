@@ -59,7 +59,7 @@ The project in based on :
 
 1. [ChromeSerial API](http://developer.chrome.com/apps/serial)
 2. ArduinoSerial: Source an API doc will come soon.
-Actualy the project is using only one arduino analog port but you can go well further.
+Actually the project is using only one arduino analog port but you can go well further.
 3. [Project uses Arduino basics] (https://www.arduino.cc/en/Reference/HomePage)
 
 
@@ -69,11 +69,9 @@ The MIT Licence (MIT)
 
 ##What next ?
 
-I am thinking of making power automaticaly increase/decrese by using servoMotor and PID script but for now i'm using a gas heater and i have to be sure to get this to a safe way.
+I am thinking of making power automaticaly increase/decrese by using servoMotor and PID script but for now i'm using a gas heater and i have to be sure to get this to a safe way !
 
 ##How to help ?
 
-- Convert this chrome app to an android app. 
-- Can be tricky to get serial from OTG cable. Maybe easyer through bluetooth serial.
-- Maybe we'll have to go to native app instead of Cordova App which seems downgrading performances
+- Convert this chrome app to an android app. Can be tricky to get serial from OTG cable. Maybe easyer through bluetooth serial. Maybe we'll have to go to native app instead of Cordova App which seems downgrading performances
 
